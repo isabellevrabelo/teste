@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - BH</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="principal">
+      <section class="lista-menu">
+        <h1 class="titulo-menu">Menu</h1>
+        <ul>
+          <li><a href="index.html" class="link-menu">Home</a></li>
+          <li><a href="produtos.html" class="link-menu">Produtos</a></li>
+          <li><a href="equipe.html" class="link-menu">Equipe</a></li>
+          <li><a href="contato.html" class="link-menu">Contato</a></li>
+        </ul>
+      </section>
+
+      <div class="contato-form">
+        <h1>Formulario de Contato</h1>
+        <form action="https://sheetdb.io/api/v1/r0w1tnl8r2v60" method="post">
+          <fieldset>
+            <input type="text" placeholder="Nome" name="data[nome]" />
+
+            <input type="email" placeholder="Email" name="data[email]" />
+
+            <label for="sugestao">Sugestão</label>
+            <input type="radio" name="data[tipo]" value="sugestao" />
+
+            <label for="reclamacao">Reclamação</label>
+            <input type="radio" name="data[tipo]" value="reclamacao" />
+
+            <label for="promocao">Promoção</label>
+            <input type="radio" name="data[tipo]" value="promocao" />
+
+            <textarea
+              name="data[mensagem]"
+              id=""
+              rows="5"
+              placeholder="Mensagem"
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </fieldset>
+
+        </form>
+      </div>
+      <a href="https://wa.me.55389998800071" target="_blank" class="logowhatsapp">
+        <img src="assets/img/whatsapp.png" alt="logowhatsapp"/>
+      </a>
+    </div>
+  </body>
+</html>

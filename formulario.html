@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - 2</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Formualário de Cadastro</h1>
+    </header>
+    <main>
+        <h2>Preencha as informações</h2>
+
+        <form action="">
+            <fieldset>
+
+                <label for="nome" >Nome:</label>
+                <input type="text" id="nome" placeholder="Ex.:Isabelle" autofocus>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ex.:isa@gmail">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" 
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                maxlength="13"
+                id="telefone"
+                placeholder="Ex.:(XX) X XXXX-XXXX"
+                >
+
+                <label for="aniver">Aniversário:</label>
+                <input type="date" id="aniver">
+
+                <label for="file">Selecione uma imagem:</label>
+                <input type="file" id="file">
+
+                <p>Selecione um turno:</p>
+                <label for="turno">Manhã</label>
+                <input type="radio" name="turno" id="turno">
+
+                <label for="turno">Tarde</label>
+                <input type="radio" name="turno" id="turno">
+
+                <label for="turno">Noite</label>
+                <input type="radio" name="turno" id="turno">
+
+                <p>Quais linguagens deseja aprender:</p>
+                <label for="linguagem">PHP</label>
+                <input type="checkbox" id="linguagem" checked>
+
+                <label for="linguagem">Java Script</label>
+                <input type="checkbox" id="linguagem">
+
+                <label for="linguagem">Java</label>
+                <input type="checkbox" id="linguagem">
+
+                <label for="linguagem">Python</label>
+                <input type="checkbox" id="linguagem"> 
+
+                <label for="obser">Observações:</label>
+                <textarea name="observacao" id="obser" rows="5" cols="25"></textarea>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha">
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+
+
+        </form>
+    </main>
+    
+    
+</body>
+</html>
